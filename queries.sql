@@ -42,27 +42,29 @@ ROLLBACK;
 -- Verify that changes persist after commit.
 
 BEGIN;
-UPDATE animals SET species = 'digimon ' WHERE NAME LIKE '%mon';
-UPDATE animals SET species = 'pokemon' WHERE species IS NULL;
+  UPDATE animals SET species = 'digimon ' WHERE NAME LIKE '%mon';
+  UPDATE animals SET species = 'pokemon' WHERE species IS NULL;
+  SELECT * FROM animals ORDER BY id;
 COMMIT;
-
-SELECT * FROM animals ORDER BY id;
+  SELECT * FROM animals ORDER BY id;
 
 
 -- Delete all records in the animals table, then roll back the transaction.
 
 BEGIN;
-DELETE FROM animals;
+  DELETE FROM animals;
+  SELECT COUNT(id) FROM animal;
 ROLLBACK;
+  SELECT COUNT(id) FROM animal;
 
 
 -- Transaction With SavePoint
 BEGIN;
-DELETE FROM animals WHERE date_of_birth > '2022-01-01';
+  DELETE FROM animals WHERE date_of_birth > '2022-01-01';
 SAVEPOINT my_savepoint;
-UPDATE animals SET weight_kg = weight_kg * -1;
-ROLLBACK TO my_savepoint;
-UPDATE animals SET weight_kg = weight_kg * -1 WHERE weight_kg < 0;
+  UPDATE animals SET weight_kg = weight_kg * -1;
+  ROLLBACK TO my_savepoint;
+  UPDATE animals SET weight_kg = weight_kg * -1 WHERE weight_kg < 0;
 COMMIT;
 
 
@@ -86,6 +88,7 @@ SELECT species, MAX(weight_kg) AS max_weight, MIN(weight_kg) AS min_weight
 FROM animals GROUP BY species;
 
 -- What is the average number of escape attempts per animal type of those born between 1990 and 2010?
-SELECT species, AVG(escape_attempts) AS average_escape_attempts FROM animals
-WHERE date_of_birth BETWEEN '1990-1-1' AND '2010-1-1' GROUP BY species;
+SELECT species, AVG(escape_attempts) FROM animals   
+WHERE  date_of_birth >= '1990/01/01' AND date_of_birth <= '2000/12/31'
+GROUP BY species;
 
