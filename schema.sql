@@ -1,3 +1,7 @@
+-- ---------------- --
+-- FIRST MILESTONE --
+-- ---------------- --
+
 CREATE DATABASE vet_clinic;
 
 CREATE TABLE animals (
@@ -8,3 +12,11 @@ CREATE TABLE animals (
   neutered BOOLEAN,
   weight_kg DECIMAL(10, 2)
 );
+
+
+-- ---------------- --
+-- SECOND MILESTONE --
+-- ---------------- --
+
+ALTER TABLE animals
+ADD COLUMN species VARCHAR(50);
