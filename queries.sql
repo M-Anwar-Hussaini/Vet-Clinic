@@ -49,8 +49,7 @@ COMMIT;
 SELECT * FROM animals ORDER BY id;
 
 
--- Now, take a deep breath and... Inside a transaction delete all records in the animals table, then roll back the transaction.
--- After the rollback verify if all records in the animals table still exists. After that, you can start breathing as usual ;)
+-- Delete all records in the animals table, then roll back the transaction.
 
 BEGIN;
 DELETE FROM animals;
@@ -58,4 +57,12 @@ ROLLBACK;
 
 SELECT * FROM animals ORDER BY id;
 
-
+-- Transaction With SavePoint
+BEGIN;
+DELETE FROM animals WHERE date_of_birth > '2022-01-01';
+SAVEPOINT my_savepoint;
+UPDATE animals SET weight_kg = weight_kg * -1;
+ROLLBACK TO my_savepoint;
+UPDATE animals SET weight_kg = weight_kg * -1 WHERE weight_kg < 0;
+COMMIT;
+SELECT * FROM animals;
