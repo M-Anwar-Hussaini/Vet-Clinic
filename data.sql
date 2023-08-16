@@ -46,3 +46,43 @@ VALUES ('Blossom', '1998-10-13', 3, TRUE, 17);
 -- Insert the animal "Ditto"
 INSERT INTO animals (name, date_of_birth, escape_attempts, neutered, weight_kg)
 VALUES ('Ditto', '2022-05-14', 4, TRUE, 22);
+
+
+
+-- ---------------- --
+-- THIRD MILESTONE --
+-- ---------------- --
+
+-- Add data to owners table
+INSERT INTO owners (full_name, age)
+VALUES
+	('Sam Smith', 34),
+	('Jennifer Orwell', 19),
+	('Bob', 45),
+	('Melody Pond', 77),
+	('Dean Winchester', 14),
+	('Jodie Whittaker', 38);
+
+-- Add data to species table
+INSERT INTO species (name)
+VALUES
+	('Pokemon'),
+  ('Digimon');
+
+-- Set species for each animal
+UPDATE animals SET species_id = 2 WHERE name LIKE '%mon';
+UPDATE animals SET species_id = 1 WHERE name NOT LIKE '%mon';
+SELECT * FROM animals ORDER BY id;
+
+-- Set owners for each animal
+UPDATE animals SET owner_id = 1 WHERE id = 1;
+UPDATE animals SET owner_id = 2 WHERE id = 2;
+UPDATE animals SET owner_id = 2 WHERE id = 3;
+UPDATE animals SET owner_id = 3 WHERE id = 4;
+UPDATE animals SET owner_id = 3 WHERE id = 6;
+UPDATE animals SET owner_id = 4 WHERE id = 5;
+UPDATE animals SET owner_id = 4 WHERE id = 7;
+UPDATE animals SET owner_id = 4 WHERE id = 10;
+UPDATE animals SET owner_id = 5 WHERE id = 8;
+UPDATE animals SET owner_id = 5 WHERE id = 9;
+SELECT * FROM animals ORDER BY id;
