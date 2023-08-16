@@ -69,6 +69,11 @@ VALUES
 	('Pokemon'),
   ('Digimon');
 
+-- Set species for each animal
+UPDATE animals SET species_id = 2 WHERE name LIKE '%mon';
+UPDATE animals SET species_id = 1 WHERE name NOT LIKE '%mon';
+SELECT * FROM animals ORDER BY id;
+
 -- Set owners for each animal
 UPDATE animals SET owner_id = 1 WHERE id = 1;
 UPDATE animals SET owner_id = 2 WHERE id = 2;
