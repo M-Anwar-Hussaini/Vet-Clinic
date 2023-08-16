@@ -68,3 +68,16 @@ INSERT INTO species (name)
 VALUES
 	('Pokemon'),
   ('Digimon');
+
+-- Set owners for each animal
+UPDATE animals SET owner_id = 1 WHERE id = 1;
+UPDATE animals SET owner_id = 2 WHERE id = 2;
+UPDATE animals SET owner_id = 2 WHERE id = 3;
+UPDATE animals SET owner_id = 3 WHERE id = 4;
+UPDATE animals SET owner_id = 3 WHERE id = 6;
+UPDATE animals SET owner_id = 4 WHERE id = 5;
+UPDATE animals SET owner_id = 4 WHERE id = 7;
+UPDATE animals SET owner_id = 4 WHERE id = 10;
+UPDATE animals SET owner_id = 5 WHERE id = 8;
+UPDATE animals SET owner_id = 5 WHERE id = 9;
+SELECT * FROM animals ORDER BY id;
