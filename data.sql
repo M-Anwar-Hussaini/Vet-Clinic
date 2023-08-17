@@ -100,3 +100,10 @@ VALUES
 	('Stephanie Mendez', 64, '1981-5-4'),
 	('Jack Harkness', 38, '2008-6-8');
 
+-- Data Insertion to specializations table
+INSERT INTO specializations (vet_id, species_id)
+VALUES 
+	(1, 1),
+	(3, 1),
+	(3, 2),
+	(4, 2);
