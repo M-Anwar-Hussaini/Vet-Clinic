@@ -4,8 +4,7 @@
 - [📖 \[Vet clinic database\] ](#-vet-clinic-database-)
   - [🛠 Built With ](#-built-with-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
-  - [💻 Getting Started ](#-getting-started-)
+  - [� Getting Started ](#-getting-started-)
 - [Getting Started with the Vet Clinic GitHub Repository](#getting-started-with-the-vet-clinic-github-repository)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
@@ -33,16 +32,6 @@ This database allows the clinic to efficiently track and retrieve information on
 - **[Relational Database]**
 - **[Tables]**
 - **[Professionally designed]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- This project doesn't have any demo.
-
-<!-- - [Live Demo Link](replace-with-your-deployment-URL) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
