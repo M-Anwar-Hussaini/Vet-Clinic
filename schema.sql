@@ -79,3 +79,11 @@ CREATE TABLE specializations (
 	vet_id INTEGER REFERENCES vets(id),
 	species_id INTEGER REFERENCES species(id)
 );
+
+-- Specializations Table
+CREATE TABLE visits (
+	id BIGSERIAL PRIMARY KEY,
+	visit_date DATE,
+	vet_id INTEGER REFERENCES vets(id),
+	animal_id INTEGER REFERENCES animals(id)
+);
