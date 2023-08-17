@@ -86,3 +86,49 @@ UPDATE animals SET owner_id = 4 WHERE id = 10;
 UPDATE animals SET owner_id = 5 WHERE id = 8;
 UPDATE animals SET owner_id = 5 WHERE id = 9;
 SELECT * FROM animals ORDER BY id;
+
+
+-- ---------------- --
+-- FOURTH MILESTONE --
+-- ---------------- --
+
+-- Data insertion to vets table
+INSERT INTO vets (name, age, date_of_graduation)
+VALUES
+	('William Tatcher', 45, '2000-4-23'),
+	('Maisy Smith', 26, '2019-1-17'),
+	('Stephanie Mendez', 64, '1981-5-4'),
+	('Jack Harkness', 38, '2008-6-8');
+
+-- Data Insertion to specializations table
+INSERT INTO specializations (vet_id, species_id)
+VALUES 
+	(1, 1),
+	(3, 1),
+	(3, 2),
+	(4, 2);
+
+-- Data Insertion to visits table
+INSERT INTO visits (visit_date, vet_id, animal_id)
+VALUES
+	('2020-5-24', 1, 1),
+	('2020-6-22', 3, 1),
+	('2021-2-2-', 4, 2),
+	('2020-1-5', 2, 3),
+	('2020-3-8', 2, 3),
+	('2020-5-14', 2, 3),
+	('2021-5-4', 3, 4),
+	('2021-2-24', 4, 5),
+	('2019-12-21', 2, 6),
+	('2020-8-10', 1, 6),
+	('2021-4-7', 2, 6),
+	('2019-9-29', 3, 7),
+	('2020-10-3', 4, 8), 
+	('2020-11-4', 4, 8),
+	('2019-1-24', 2, 9),
+	('2019-5-15', 2, 9),
+	('2020-2-27', 2, 9),
+	('2020-8-3', 2, 9),
+	('2020-5-24', 3, 10),
+	('2021-1-11', 1, 10);
+	
