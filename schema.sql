@@ -65,9 +65,17 @@ FOREIGN KEY (owner_id) REFERENCES owners(id);
 -- FORTH MILESTONE --
 -- ---------------- --
 
+-- Vets Table
 CREATE TABLE vets (
 	id SERIAL PRIMARY KEY,
 	name VARCHAR(50),
 	age SMALLINT,
 	date_of_graduation DATE
+);
+
+-- Specializations Table
+CREATE TABLE specializations (
+	id BIGSERIAL PRIMARY KEY,
+	vet_id INTEGER REFERENCES vets(id),
+	species_id INTEGER REFERENCES species(id)
 );
