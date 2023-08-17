@@ -59,3 +59,15 @@ ADD COLUMN owner_id INTEGER;
 ALTER TABLE animals
 ADD CONSTRAINT fk_animals_owners
 FOREIGN KEY (owner_id) REFERENCES owners(id);
+
+
+-- ---------------- --
+-- FORTH MILESTONE --
+-- ---------------- --
+
+CREATE TABLE vets (
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(50),
+	age SMALLINT,
+	date_of_graduation DATE
+);
