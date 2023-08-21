@@ -213,3 +213,20 @@ JOIN species s ON s.id = a.species_id
 WHERE vt.name = 'Maisy Smith'
 GROUP BY s.name, vt.name
 ORDER BY amount DESC LIMIT 1;
+
+
+
+-- ---------------- --
+-- FIFTH MILESTONE --
+-- ---------------- --
+
+SELECT COUNT(*) FROM visits where animal_id = 4;
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animal_id = 4;
+
+SELECT * FROM visits WHERE vet_id = 2;
+EXPLAIN ANALYZE SELECT * FROM visits WHERE vet_id = 2;
+
+SELECT * FROM owners WHERE email = 'owner_18327@mail.com';
+EXPLAIN ANALYZE SELECT * FROM owners WHERE email = 'owner_18327@mail.com';
+
+
