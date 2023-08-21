@@ -87,3 +87,11 @@ CREATE TABLE visits (
 	vet_id INTEGER REFERENCES vets(id),
 	animal_id INTEGER REFERENCES animals(id)
 );
+
+
+-- ---------------- --
+-- FIFTH MILESTONE --
+-- ---------------- --
+
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
