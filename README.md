@@ -20,6 +20,7 @@
 **[Vet Clinic Database]** is a structured collection of data designed to store and manage information related to animals and their care within a veterinary clinic setting. The database includes a table named "animals" which holds details about various animals that have been treated at the clinic. Each row in the table represents an individual animal and contains information such as its name, date of birth, escape attempts, neutering status, and weight.
 
 This database allows the clinic to efficiently track and retrieve information on animals based on specific criteria. The provided SQL queries offer functionalities like identifying animals with certain characteristics (e.g., name ending in "mon"), listing animals born within a certain date range, identifying animals with specific attributes (e.g., neutered and escape attempts), and more. These queries assist in managing and providing quality care to animals under the clinic's care, enhancing operational efficiency and decision-making processes.
+<img src="ER Diagram.png"></img>
 
 ## 🛠 Built With <a name="built-with"></a>
 
