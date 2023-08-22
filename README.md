@@ -29,9 +29,24 @@ This database allows the clinic to efficiently track and retrieve information on
 
 ### Key Features <a name="key-features"></a>
 
-- **[Relational Database]**
-- **[Tables]**
-- **[Professionally designed]**
+- **[Database Created]**
+- **[Animals Table Created]**
+- **[Data entered into the table]**
+- **[Multiple data queries executed]**
+- **[Updating data with transaction Rollback and Commit Executed]**
+- **[Deleting data with transaction Rollback and Commit Executed]**
+- **[Updating data with transaction savepoint Executed]**
+- **[Querying table with aggregated response Executed]**
+- **[Multiple tables added]**
+- **[Primary Keys and Foreign Keys Deployed]**
+- **[Data Inserted in multiple tables]**
+- **[Tables linked with Foreign keys]**
+- **[Querying Multiple tables using Join Executed]**
+- **[Join Tables added for multiple tables]**
+- **[Inserting Data into Join tables Executed]**
+- **[Querying Data by using Join Tables Executed]**
+- **[Database performance test executed]**
+- **[Query performance improved with Indexing ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -60,6 +75,11 @@ To get a local copy up and running, follow these steps:
 - Twitter: [@Anwar Hussaini](https://twitter.com/MAnwarHussaini)
 - LinkedIn: [Anwar Hussaini](https://www.linkedin.com/in/anwar-hussaini/)
 
+👤 **Demes Ameneshoa**
+
+- GitHub: [@demesameneshoa](https://github.com/demesameneshoa)
+- Twitter: [@demesabera](https://twitter.com/demesabera)
+- LinkedIn: [Demes Ameneshoa](https://linkedin.com/in/demesameneshoa)
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>

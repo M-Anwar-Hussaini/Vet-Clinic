@@ -87,3 +87,20 @@ CREATE TABLE visits (
 	vet_id INTEGER REFERENCES vets(id),
 	animal_id INTEGER REFERENCES animals(id)
 );
+
+
+-- ---------------- --
+-- FIFTH MILESTONE --
+-- ---------------- --
+
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+-- add index for a visits table by animal id
+CREATE INDEX idx_animal_id ON visits (animal_id);
+
+-- add index for a visits table by vet id
+CREATE INDEX idx_vet_id ON visits (vet_id);
+
+--add index for owners table by email
+CREATE INDEX idx_email ON owners (email);
